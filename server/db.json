@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "title": "Mr",
+      "nome": "Lukau João Manuel ",
+      "apelido": "Garcia",
+      "email": "lukaujoao@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 6,
+      "isSelected": false
+    },
+    {
+      "title": "Mrs",
+      "nome": "Pinto",
+      "apelido": "Kabonda",
+      "email": "kabonda@gmail.com",
+      "role": "Admin",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 7,
+      "isSelected": false
+    },
+    {
+      "title": "Mr",
+      "nome": "Joao Batista",
+      "apelido": "Firmino",
+      "email": "firmino@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 8,
+      "isSelected": false
+    },
+    {
+      "title": "Miss",
+      "nome": "Esperança Joao ",
+      "apelido": "Lamento",
+      "email": "hope@gmail.com",
+      "role": "Admin",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 9,
+      "isSelected": false
+    },
+    {
+      "title": "Miss",
+      "nome": "Edvânia ",
+      "apelido": "Moniz",
+      "email": "edmoniz@gmail.com",
+      "role": "Admin",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 10,
+      "isSelected": false
+    },
+    {
+      "title": "Mrs",
+      "nome": "Aldair ",
+      "apelido": "Avelino",
+      "photo": "C:\\fakepath\\vaga.PNG",
+      "email": "aldairave@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 12
+    },
+    {
+      "title": "Miss",
+      "nome": "Stella ",
+      "apelido": "Pinto",
+      "photo": "C:\\fakepath\\recrutament.jpg",
+      "email": "stella@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 14
+    },
+    {
+      "title": "Miss",
+      "nome": "Cristina",
+      "apelido": "Futa",
+      "photo": "C:\\fakepath\\veja aqui3.PNG",
+      "email": "crisfuta@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 16
+    },
+    {
+      "title": "Mr",
+      "nome": "Nelson ",
+      "apelido": "Pinto",
+      "photo": "C:\\fakepath\\recrutament.jpg",
+      "email": "nelson@gmail.com",
+      "role": "User",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": 17
+    }
+  ],
+  "profiles": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "Spanner",
+      "category": "tools"
+    },
+    {
+      "id": 2,
+      "name": "Hammer",
+      "category": "tools"
+    },
+    {
+      "id": 3,
+      "name": "Screw driver",
+      "category": "tools"
+    },
+    {
+      "id": 4,
+      "name": "Paint brush",
+      "category": "paint"
+    },
+    {
+      "id": 5,
+      "name": "Paint roller",
+      "category": "paint"
+    },
+    {
+      "id": 6,
+      "name": "Paint",
+      "category": "paint"
+    }
+  ]
+}

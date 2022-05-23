@@ -1,0 +1,54 @@
+<h1>All Users</h1>
+<a routerLink="add" class="btn btn-sm btn-success mb-2">Add User</a> &nbsp;
+<a href="#" (click)="exportExcell()" class="btn btn-sm btn-info mb-2"><i class="fa fa-file-excel-o"></i>&nbsp;Export
+    XSLX</a>&nbsp;
+<a href="#" (click)="downloadAsPDF()" class="btn btn-sm btn-primary mb-2"><i class="fa fa-file-pdf-o"></i>&nbsp;Export PDF</a>
+<div class="row">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Pesquisar usuario" [(ngModel)]="primeiroNome" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" (click)="searchUser(primeiroNome)">
+                Pesquisar
+            </button>
+        </div>
+    </div>
+</div>
+<table class="table table-striped" id="htmlData">
+    <thead>
+        <tr>
+            <th style="width: 30%;"><input type="checkbox" name="check" [(ngModel)]="isMainSel"
+                    (change)="onCheckBoxChangeAll()"></th>
+            <th style="width: 30%">Foto</th>
+            <th style="width: 30%">Nome</th>
+            <th style="width: 30%">Apelido</th>
+            <th style="width: 30%">Email</th>
+            <th style="width: 30%">Perfil</th>
+            <th style="width: 10%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of usuarios">
+            <td><input type="checkbox" name="check" value="{{user.id}}" [(ngModel)]="user.isSelected"
+                    (click)="isAllSelected()"></td>
+            <td>{{user.photo}}</td>
+            <td>{{user.title}} {{user.nome}}</td>
+            <td>{{user.apelido}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.role}}</td>
+            <td style="white-space: nowrap">
+                <a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">EDIT</a>&nbsp;&nbsp;
+                <button (click)="deleteOne(user.id)" class="btn btn-sm btn-danger btn-delete-user"
+                    [disabled]="user.isDeleting">
+                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>
+                    <span *ngIf="!user.isDeleting">DELETE</span>
+                </button>&nbsp;&nbsp;
+                <a routerLink="/detail/{{user.id}}" class="btn btn-sm btn-info mr-1">VIEW</a>
+            </td>
+        </tr>
+        <!-- <tr *ngIf="!users">
+            <td colspan="4" class="text-center">
+                <span class="spinner-border spinner-border-lg align-center"></span>
+            </td>
+        </tr> -->
+    </tbody>
+</table>
